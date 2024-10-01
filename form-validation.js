@@ -1,5 +1,5 @@
 document.addEventListener('click', function(e) {
-	var btnMessage = "enviar mensagem"
+  var btnMessage = "enviar mensagem"
 
   btnMessage = /^[A-Za-z.\s_-]+$/.test(btnMessage)
   var sendButtonValue = /^[A-Za-z.\s_-]+$/.test(e.srcElement.innerText) || /^[A-Za-z.\s_-]+$/.test(e.srcElement.value)
