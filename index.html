@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Form Page</title>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="content">
+        <form action="" method="get">
+          <h1>Add your information below</h1>
+          <div class="databox">
+            <label for="name"><span>Name</span></label>
+            <input type="text" name="name" id="name" required autocomplete="false">
+          </div>
+          <div class="databox">
+            <label for="lastname"><span>Lastname</span></label>
+            <input type="text" name="lastname" id="lastname" required>
+          </div>
+          <div class="databox">
+            <label for="email"><span>E-Mail</span></label>
+          <input type="email" name="email" id="email" required>
+          </div>
+          <div class="databox">
+            <label for="phone"><span>Phone Number</span></label>
+          <input type="tel" name="phone" id="phone" required>
+          </div>
+          <div class="databox">
+            <label for="address"><span>Address</span></label>
+          <input type="text" name="address" id="address">
+          </div>
+          <div class="databox input-adjust">
+            <label for="zip"><span>Zip</span></label>
+          <input type="text" name="zip" id="zip">
+          </div>
+          <div class="databox input-adjust">
+            <label for="city"><span>City</span></label>
+          <input type="text" name="city" id="city">
+          </div>
+          <select name="state">
+            <option disabled selected hidden>State</option>
+            <option>Green Hill Zone</option>
+            <option>Chemical Plant</option>
+            <option>Marble Garden</option>
+            <option>Labyrinth Zone</option>
+            <option>Hill Top</option>
+          </select>
+          <p>Select your favorite foods:</p>
+          <input type="checkbox" id="c_opt1" name="c_opt1" value="Pizza">
+          <label for="c_opt1">Pizza</label><br>
+          <input type="checkbox" id="c_opt2" name="c_opt2" value="Sushi">
+          <label for="c_opt2">Sushi</label><br>
+          <input type="checkbox" id="c_opt3" name="c_opt3" value="Biryani">
+          <label for="c_opt3">Biryani</label><br>
+          <input type="checkbox" id="c_opt4" name="c_opt4" value="Hamburger">
+          <label for="c_opt4">Hamburger</label>
+          <p><span class="mandatory">*</span>Select your favorite hero:</p>
+          <input type="radio" id="r_opt1" name="r_opt" value="Captain America" required>
+          <label for="r_opt1">Captain America</label><br>
+          <input type="radio" id="r_opt2" name="r_opt" value="Wolverine" required>
+          <label for="r_opt2">Wolverine</label><br>
+          <input type="radio" id="r_opt3" name="r_opt" value="Superman" required>
+          <label for="r_opt3">Superman</label><br>
+          <input type="radio" id="r_opt4" name="r_opt" value="El Chapulin Colorado" required>
+          <label for="r_opt4">El Chapulin Colorado</label><br>
+          <input type="radio" id="r_opt5" name="r_opt" value="Goku" required>
+          <label for="r_opt5">Goku</label>
+          <textarea placeholder="Leave your message for the SMEs" required></textarea>
+          <input type="checkbox" id="c_agree" name="c_agree" value="agree" required>
+          <label for="c_agree"><span class="mandatory">*</span>I agree to Terms and Conditions</label><br>
+          <input type="checkbox" id="c_news" name="c_news" value="subscribe">
+          <label for="c_news"><span class="mandatory">&nbsp;&nbsp;</span>I want to subscribe and receive offers and news</label><br />
+          <br />
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+  <!-- <script type="text/javascript" src="form-validation.js"></script> -->
+</body>
+</html>

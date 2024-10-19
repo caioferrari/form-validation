@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(transparent 0% 25%, #160c28 0% 50%),
+              radial-gradient(closest-side, transparent calc(100% - 1px), #160c28),
+              linear-gradient(135deg, #d1dfd6 50%, #efab48 0) 2em 2em;
+  background-size: 8em 8em, 4em 4em;
+}
+
+body {
+  width: 100%;
+  min-height: 100% !important;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 500px;
+  height: 100%;
+  background: #FFF;
+  margin: 0 auto;
+  display: table;
+}
+
+.content {
+  width: 500px;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mandatory {
+  font-size: 10px;
+  position: relative;
+  color: red;
+  top: -4px;
+  left: -1px;
+}
+
+.databox {
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  -m-box-sizing: border-box;
+}
+
+.databox label {
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  color: #8F8F8F;
+  display: block;
+  padding: 10px 0px 0px 8px;
+  position: absolute;
+  top: 5px;
+  cursor: text;
+  z-index: 9999;
+  box-sizing: border-box;
+  -m-box-sizing: border-box;
+  transition: 0.1s
+}
+
+.databox label span {
+  padding: 0px 3px;
+}
+
+label.selected {
+  width: inherit;
+  height: inherit;
+  margin: -8px 0px 0px 8px;
+  padding: 0px 0px;
+  cursor: default;
+  box-sizing: border-box;
+  -m-box-sizing: border-box;
+  transition: 0.1s
+}
+
+label.selected span {
+  background: #FFF;
+}
+
+form {
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  -m-box-sizing: border-box;
+  text-align: left;
+}
+
+form h1 {
+  margin: 0px 0px 20px;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'],
+form textarea,
+form select {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0px;
+  padding: 7px 9px;
+  color: #5E5E5E;
+  font-size: 13px;
+  box-sizing: border-box;
+  -m-box-sizing: border-box;
+  border: 1px #d1d1d1 solid;
+  position: relative;
+}
+
+form input[name='zip'],
+form input[name='city'],
+.input-adjust {
+  width: 231.99px;
+  float: left;
+}
+
+.input-adjust:nth-child(7) {
+  margin-right: 5px;
+}
+
+form select {
+  color: #636363;
+  appearance: none
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+}
+
+form select option:first {
+  color: #FFF;
+}
+
+form textarea {
+  height: 100px;
+  margin: 20px 0px 10px;
+}
+
+form p {
+  margin: 20px 0px 0px;
+}
+
+form button {
+  padding: 10px 55px;
+  margin: 0px auto;
+  background: #EFAB48;
+  border: 0px;
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
